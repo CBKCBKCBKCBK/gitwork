@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    font-family: '標楷體';
+}
+body{
+    display: flex;
+    width: 1024px;
+    padding: 0 12px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+}
+/* h1{
+    color: blue;
+} */
+.top{
+    flex-basis: 1000px;
+    height: 65px;
+    border: 1px solid #ccc;
+    /* border-bottom: 0px; */
+}
+.aside{
+    flex-basis: 215px;
+    height: calc(768px - 65px - 20px);
+    border: 1px solid #ccc;
+    /* border-right: 0px; */
+    display: flex;
+    flex-direction: column;
+}
+.aside>.menu{
+    flex-basis: calc(100% - 25px);
+    border: 1px solid #ccc;
+}
+.menu>.menu-header{
+    font-weight: 500;
+    font-size: 25px;
+    color: #FF00FF;
+    margin: 20px auto;
+    text-decoration: underline;
+}
+.menu>a{
+    /* inline不會換行 */
+
+    display: block;
+    background-image: url('../images/menu1.png');
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 35px;
+    margin: 10px auto;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    padding-top: 8px;
+}
+.menu>a:hover{
+    background-image: url('../images/menu2.png');
+}
+.menu>.menu-btn{
+    text-decoration: underline;
+    color: #0000FF;
+}
+.aside>.update{
+    flex-basis: 25px;
+    border: 1px solid #ccc;
+}
+.section{
+    flex-basis: calc(100% - 215px);
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+.section>.marquee{
+    flex-basis: 29px;
+    border: 1px solid #ccc;
+    font-size: 24px;
+    color: #0000ff;
+}
+.marquee>marquee{
+    display: block;
+}
+.content>iframe{
+    /* background-color: lightblue; */
+    border: 1px solid #ccc;
+    margin: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    /* width: 100%;
+    height: 100%; */
+}
+.section>.content{
+    flex-basis: calc(100% - 29px);
+    border: 1px solid #ccc;
+}
+.footer{
+    flex-basis: 1000px;
+    height: 20px;
+    border: 1px solid #ccc;
+    /* border-top: 0px; */
+    color: #000000;
+}

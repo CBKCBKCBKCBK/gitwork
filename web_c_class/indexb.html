@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        container{
+            display: flex;
+            margin: 0 auto;
+            width: 800px;
+            flex-direction: column;
+        }
+        header{
+            background-color: aliceblue;
+            flex-basis: 100px;
+        }main{
+            flex-basis: 400px;
+            display: flex;
+        }
+        main>aside{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 20%;
+        }
+        nav{
+            background-color: antiquewhite;
+            flex-basis: 90%;
+        }aside>article{
+            background-color: aqua;
+            flex-basis: 10%;
+            display: flex;
+            align-items: center;
+        }section{
+            background-color: azure;
+            flex-basis: 80%;
+        }
+        section>article{
+            background-color: aquamarine;
+        }footer{
+            background-color: beige;
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <container>
+        <header>top</header>
+        <main>
+            <aside><nav>nav</nav>
+                <article><span>update</span></article></aside>
+            <section><article>marquee</article>
+                <section>content</section>
+                </section>
+        </main>
+        <footer>footer</footer>
+    </container>
+</body>
+</html>
